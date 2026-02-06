@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}New App Detail Page{% endblock %}
+
+{% block content %}
+    <h1>{{ newapp.name }}</h1> 
+    <p>{{ newapp.description }}</p>
+    <p><a href="{% url 'all_newapp' %}">Back to all Machines</a></p>
+{% endblock %}
